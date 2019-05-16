@@ -40,7 +40,9 @@
     "request": "^2.87.0",
     "uuid": "^3.3.2",
     "qiniu": "^7.2.1",
-    "ws": "^5.2.0"
+    "ws": "^5.2.0",
+    "twilio": "^3.31.0",
+    "phone": "^2.3.11"
   },
   "devDependencies": {
     "pre-commit": "1.2.2",

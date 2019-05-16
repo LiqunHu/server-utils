@@ -4,6 +4,7 @@ const redisClient = require('./lib/redisClient')
 const authority = require('./lib/authority')
 const scheduleJob = require('./lib/scheduleJob')
 const smsClient = require('./lib/smsClient')
+const twilioClient = require('./lib/twilioClient')
 const fileUtil = require('./lib/fileUtil')
 const mongoClient = require('./lib/mongoClient')
 const elasticsearchClient = require('./lib/elasticsearchClient')
@@ -14,6 +15,7 @@ const setLogger = appointLogger => {
   authority.setLogger(appointLogger)
   scheduleJob.setLogger(appointLogger)
   smsClient.setLogger(appointLogger)
+  twilioClient.setLogger(appointLogger)
   fileUtil.setLogger(appointLogger)
 }
 
@@ -25,6 +27,7 @@ module.exports = {
   scheduleJob: scheduleJob,
   websocketUtil: websocketUtil,
   smsClient: smsClient,
+  twilioClient: twilioClient,
   fileUtil: fileUtil,
   mongoClient: mongoClient,
   elasticsearchClient: elasticsearchClient
