@@ -8,6 +8,7 @@ const twilioClient = require('./lib/twilioClient')
 const fileUtil = require('./lib/fileUtil')
 const mongoClient = require('./lib/mongoClient')
 const elasticsearchClient = require('./lib/elasticsearchClient')
+const alicloud = require('./lib/alicloud')
 
 const setLogger = appointLogger => {
   rabbitmqClinet.setLogger(appointLogger)
@@ -17,6 +18,7 @@ const setLogger = appointLogger => {
   smsClient.setLogger(appointLogger)
   twilioClient.setLogger(appointLogger)
   fileUtil.setLogger(appointLogger)
+  alicloud.setLogger(appointLogger)
 }
 
 module.exports = {
@@ -30,5 +32,6 @@ module.exports = {
   twilioClient: twilioClient,
   fileUtil: fileUtil,
   mongoClient: mongoClient,
-  elasticsearchClient: elasticsearchClient
+  elasticsearchClient: elasticsearchClient,
+  alicloud: alicloud
 }
