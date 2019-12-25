@@ -9,6 +9,7 @@ const fileUtil = require('./lib/fileUtil')
 const mongoClient = require('./lib/mongoClient')
 const elasticsearchClient = require('./lib/elasticsearchClient')
 const alicloud = require('./lib/alicloud')
+const WXPay = require('./lib/wxpay')
 
 const setLogger = appointLogger => {
   rabbitmqClinet.setLogger(appointLogger)
@@ -33,5 +34,6 @@ module.exports = {
   fileUtil: fileUtil,
   mongoClient: mongoClient,
   elasticsearchClient: elasticsearchClient,
-  alicloud: alicloud
+  alicloud: alicloud,
+  WXPay: WXPay
 }
