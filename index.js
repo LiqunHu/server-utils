@@ -35,5 +35,5 @@ module.exports = {
   mongoClient: mongoClient,
   elasticsearchClient: elasticsearchClient,
   alicloud: alicloud,
-  WXPay: WXPay
+  WXPay: WXPay.wxpay
 }
