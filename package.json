@@ -30,6 +30,7 @@
     "lodash": "^4.17.11",
     "elasticsearch": "^15.2.0",
     "multiparty": "^4.2.1",
+    "moment": "^2.22.2",
     "mime-types": "^2.1.18",
     "crypto-js": "^3.1.6",
     "ioredis": "^4.6.2",
