@@ -11,7 +11,7 @@ const elasticsearchClient = require('./lib/elasticsearchClient')
 const alicloud = require('./lib/alicloud')
 const WXPay = require('./lib/wxpay')
 
-const setLogger = appointLogger => {
+const setLogger = (appointLogger) => {
   rabbitmqClinet.setLogger(appointLogger)
   websocketUtil.setLogger(appointLogger)
   authority.setLogger(appointLogger)
@@ -20,6 +20,7 @@ const setLogger = appointLogger => {
   twilioClient.setLogger(appointLogger)
   fileUtil.setLogger(appointLogger)
   alicloud.setLogger(appointLogger)
+  WXPay.setLogger(appointLogger)
 }
 
 module.exports = {
@@ -35,5 +36,5 @@ module.exports = {
   mongoClient: mongoClient,
   elasticsearchClient: elasticsearchClient,
   alicloud: alicloud,
-  WXPay: WXPay
+  WXPay: WXPay,
 }
